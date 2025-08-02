@@ -49,7 +49,7 @@ DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in enviro
 support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1002491588102')  # Support group id (make sure bot is admin)
 reqst_channel = environ.get('REQST_CHANNEL_ID', '-1002799537836')  # Request channel id (make sure bot is admin)
 AUTH_CHANNEL = [int(fch) if id_pattern.search(fch) else fch for fch in environ.get('AUTH_CHANNEL', '-100').split()]
-MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002799537836 -1002393184501 -1002409869914 -1002447923581').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
+MULTI_FSUB = [int(channel_id) for channel_id in environ.get('MULTI_FSUB', '-1002799537836 -1002312706219 -1002409869914 -1002447923581').split() if re.match(r'^-?\d+$', channel_id)]  # Channel for force sub (make sure bot is admin)
 
 
 # ============================
@@ -95,7 +95,7 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 # ============================
 GRP_LNK = environ.get('GRP_LNK', 'https://t.me/SDMOVIESPOINTEe')
 CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/+wKsff6Rqn19kZTk1')
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/Searching7_filebot')
+OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/moviesbazaarsupp')
 DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK = environ.get('DEENDAYAL_MOVIE_UPDATE_CHANNEL_LNK', 'https://t.me/+wKsff6Rqn19kZTk1')
 OWNERID = int(os.environ.get('OWNERID', '7951767281'))  # Replace with the actual admin ID
 
